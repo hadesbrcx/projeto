@@ -6,7 +6,7 @@
 
 Projeto construído do curso gratuito da Rocketseat.
 
-[🔗 Clique aqui para acessar](https://maykbrito.github.io/nlw-esports-explorer/)
+[🔗 Clique aqui para acessar](https://github.com/hadesbrcx/projeto?tab=readme-ov-file)
 
 ## 🛠 Tecnologias
 
