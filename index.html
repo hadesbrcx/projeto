@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light1">
+  <!-- Este é o tipo de documento HTML, informa ao navegador que este é um documento HTML5 -->
+
+  <head>
+    <!-- A tag head contém metadados e outras informações relevantes para a página, mas não o conteúdo em si -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Esta tag link estabelece uma conexão com o servidor do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Esta tag link estabelece uma conexão com o servidor do Google Fonts com um pedido cross-origin -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+      meta
+      charset="UTF-8"
+    />
+    <!-- Esta tag link importa a fonte Inter do Google Fonts -->
+    <meta name="viewport" content="width=device-width, escala inicial=1.0" />
+    <!-- Esta tag meta define o viewport da página, é usado para tornar a página responsiva -->
+    <title>Devlinks</title>
+    <!-- A tag title define o título da página, que é exibido na barra de título ou guia do navegador -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Esta tag link importa a folha de estilos CSS para a página -->
+  </head>
+  <body>
+    <!-- A tag body contém o conteúdo da página, como texto, imagens, vídeos, etc. -->
+    <div id="conteiner"></div>
+    <!-- Esta div é um contêiner para as seções de perfil e links -->
+    <div id="profile">
+      <!-- Esta div contém as informações do perfil -->
+      <div id="switch" onclick="togglemode()">
+        <button></button>
+
+        <span></span>
+      </div>
+      <img
+        src="/assets/avatar.png"
+        alt="foto de um homem que usa óculos, de camisa preta e fundo amarelo"
+      />
+      <!-- Esta tag img exibe a foto do perfil -->
+      <p id="mito">@felippemito</p>
+      <!-- Esta tag p exibe o nome do perfil -->
+    </div>
+    <div id="lula">
+      <!-- Esta div contém a seção de links -->
+      <ul id="ul">
+        <!-- Esta tag ul contém a lista de links -->
+        <li>
+          <a id="lula" href="#">INSCREVA-SE NO MLW</a>
+        </li>
+        <!-- Esta li contém um link para se inscrever no curso MLW -->
+        <li>
+          <a id="lula" href="#">Baixar meu ebook</a>
+        </li>
+        <!-- Esta li contém um link para baixar o ebook -->
+        <li>
+          <a id="lula" href="#">veja meu portfólio</a>
+        </li>
+        <!-- Esta li contém um link para ver o portfólio -->
+        <li>
+          <a id="lula" href="https://www.youtube.com/" target="_blank"
+            >site do youtube</a
+          >
+        </li>
+        <!-- Esta li contém um link para o site do YouTube -->
+      </ul>
+      <div id="social">
+        <a href="https://github.com/" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://br.linkedin.com/" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+      </div>
+    </div>
+    <footer>
+      Feito com amor pela
+      <a href="https://rocketseat.com.br" target="_blank">Rocketseat</a>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

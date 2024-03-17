@@ -1,0 +1,162 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-url) no-repeat top center/cover;
+  /*isso e um atalho para as propriedades acima */
+}
+#conteiner {
+  width: 360px;
+  margin: 56px auto 0px auto;
+  padding: 0 24px;
+}
+/*profile*/
+#profile img {
+  width: 112px;
+}
+body * {
+  font-family: "inter" sans-serif;
+  color: var(--text-color);
+}
+#profile p {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 24px;
+  margin-top: 8px;
+}
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+/*swichts*/
+#switch {
+  position: relative;
+  width: 100px;
+}
+
+#switch button {
+  width: 60px;
+  height: 60px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border-radius: 50%;
+  border: 0;
+
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  z-index: 1;
+}
+
+.light1 #switch button {
+  right: 0;
+  left: initial;
+}
+
+#switch span {
+  display: block;
+  height: 35px;
+  width: 100px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
+#lula {
+  color: white;
+  font-size: 50px;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; /* Isso define a largura da div, ajuste conforme necessário */
+}
+
+#mito {
+  color: rgb(68, 0, 196);
+}
+/*LINKS */
+
+#ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 24px 0;
+}
+
+ul li a {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  gap: 9px;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+/* PSEUDO-SELECTOR*/
+ul li a:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
+}
+
+/* social links */
+#social {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  padding: 24px 0px;
+
+  font-size: 60px;
+}
+
+#social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+#social a:hover {
+  background-color: var(--highlight-color);
+  padding: 16px;
+}
+
+footer {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 40px;
+}
+:root {
+  --text-color: white;
+  --bg-url: url(./assets//bg-desktop.jpg);
+  --stroke-color: rgb(204, 190, 190);
+  --surface-color: rgb(37, 37, 48);
+  --surface-color-hover: rgba(53, 47, 47, 0.05);
+  --highlight-color: rgba(139, 128, 128, 0.2);
+  --switch-bg-url: url(assets/moon-stars.svg);
+}
+
+.light1 {
+  --text-color: black;
+  --bg-url: url(./assets//bg-desktop-light.jpg);
+  --stroke-color: black;
+  --surface-color: rgb(0, 0, 0, 0.05);
+  --surface-color-hover: rgb(0, 0, 0, 0.02);
+  --switch-bg-url: url(assets/sun.svg);
+}
